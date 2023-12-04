@@ -1,6 +1,6 @@
 ﻿namespace Calculadora
 {
-    partial class Calculadora
+    partial class FormCalculadora
     {
         /// <summary>
         /// Variable del diseñador necesaria.
@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Calculadora));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormCalculadora));
             this.txtResultado = new System.Windows.Forms.TextBox();
             this.btnSiete = new System.Windows.Forms.Button();
             this.btnOcho = new System.Windows.Forms.Button();
@@ -408,7 +408,7 @@
             this.btnQuitar.UseVisualStyleBackColor = false;
             this.btnQuitar.Click += new System.EventHandler(this.btnQuitar_Click);
             // 
-            // Calculadora
+            // FormCalculadora
             // 
             this.AcceptButton = this.btnIgual;
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -440,7 +440,7 @@
             this.Controls.Add(this.txtResultado);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
-            this.Name = "Calculadora";
+            this.Name = "FormCalculadora";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Calculadora";
             this.ResumeLayout(false);

@@ -10,12 +10,12 @@ using System.Windows.Forms;
 
 namespace Calculadora
 {
-    public partial class Calculadora : Form
+    public partial class FormCalculadora : Form
     {
         double Numero1 = 0, Numero2 = 0;
         char Operador;
 
-        public Calculadora()
+        public FormCalculadora()
         {
             InitializeComponent();
         }
