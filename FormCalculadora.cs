@@ -192,6 +192,10 @@ namespace Calculadora
                     btnDividir.PerformClick(); break;
                 case "*":
                     btnMultiplicar.PerformClick(); break;
+                case "\b": // Tecla Borrar (Backspace)
+                    btnQuitar.PerformClick(); break;
+                case "\x1B": // Tecla Escape
+                    this.Close(); break;
                 default: break;
             }
         }
