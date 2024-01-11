@@ -57,6 +57,7 @@
             // txtResultado
             // 
             this.txtResultado.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtResultado.Enabled = false;
             this.txtResultado.Font = new System.Drawing.Font("Segoe UI", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtResultado.Location = new System.Drawing.Point(12, 12);
             this.txtResultado.MaxLength = 35;
@@ -439,10 +440,12 @@
             this.Controls.Add(this.btnSiete);
             this.Controls.Add(this.txtResultado);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.KeyPreview = true;
             this.MaximizeBox = false;
             this.Name = "FormCalculadora";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Calculadora";
+            this.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.FormCalculadora_KeyPress);
             this.ResumeLayout(false);
             this.PerformLayout();
 

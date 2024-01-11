@@ -63,6 +63,9 @@ namespace Calculadora
             {
                 txtResultado.Text = "0";
             }
+
+            // Para que muestre el resultado al presionar ENTER
+            btnIgual.Focus();
         }
 
         // Borrar el último caracter 
@@ -153,6 +156,43 @@ namespace Calculadora
                     txtResultado.Text = "Error";
                     MessageBox.Show("No es posible dividir por cero");
                 }
+            }
+        }
+
+        // Entrada por teclado de números y opereaciones
+        private void FormCalculadora_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            switch (e.KeyChar.ToString())
+            {
+                case "0":
+                    btnCero.PerformClick(); break;
+                case "1":
+                    btnUno.PerformClick(); break;
+                case "2":
+                    btnDos.PerformClick(); break;
+                case "3":
+                    btnTres.PerformClick(); break;
+                case "4":
+                    btnCuatro.PerformClick(); break;
+                case "5":
+                    btnCinco.PerformClick(); break;
+                case "6":
+                    btnSeis.PerformClick(); break;
+                case "7":
+                    btnSiete.PerformClick(); break;
+                case "8":
+                    btnOcho.PerformClick(); break;
+                case "9":
+                    btnNueve.PerformClick(); break;
+                case "+":
+                    btnSumar.PerformClick(); break;
+                case "-":
+                    btnRestar.PerformClick(); break;
+                case "/":
+                    btnDividir.PerformClick(); break;
+                case "*":
+                    btnMultiplicar.PerformClick(); break;
+                default: break;
             }
         }
     }
